@@ -31,6 +31,7 @@ class Background(object):
         # Initialize render and assign the deepest layer
         self.render = vtk.vtkRenderer()
         self.render.SetLayer(0)
+        self.render.InteractiveOff()
 
         # In VTK renders objects are shown through actors, like in a movie
         self.image_actor = vtk.vtkImageActor()

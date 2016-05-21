@@ -31,6 +31,7 @@ class Director(object):
         # self.render.ResetCamera()
 
         self.render_window = vtk.vtkRenderWindow()
+        self.render_window.SetNumberOfLayers(3)
         self.render_window.SetSize(width, height)
         self.render_window.AddRenderer(self.background.render)
         self.render_window.AddRenderer(self.render)
