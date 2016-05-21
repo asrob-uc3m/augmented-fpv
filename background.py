@@ -1,7 +1,4 @@
-"""
-"""
-
-import cv2
+import cv2  # OpenCV namespace
 import numpy as np
 import vtk
 
